@@ -1,7 +1,7 @@
-var engine = require('../lib/engine.js');
+var Mario = require('../lib/engine.js').Mario;
 var fs = require('fs');
 
-console.log(engine.compile(fs.readFileSync('./template.html', {
+var mario = new Mario(fs.readFileSync('./template.html', {
     encoding: 'utf-8'
 }), {
     exampleArray: [ 'first', 'second', 'third' ],
@@ -12,4 +12,6 @@ console.log(engine.compile(fs.readFileSync('./template.html', {
         }
     },
     show: true
-}));
+});
+
+console.log(mario.compile());
