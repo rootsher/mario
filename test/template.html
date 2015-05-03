@@ -1,0 +1,27 @@
+Array content:
+:: if (show) { ::
+    :: for (var i in exampleArray) { ::
+        <a href="#">:: exampleArray[i] ::</a>
+    :: } ::
+    :: for (var i = 0, len = exampleArray.length; i < len; i += 1) { ::
+        <a href="#">:: exampleArray[i] ::</a>
+    :: } ::
+:: } else { ::
+    <p>hidden</p>
+:: } ::
+
+<p>:: option.x.y ::</p>
+
+:: switch (option.x.z) { ::
+    :: case "first": ::
+        <p>first</p>
+        :: break; ::
+    :: case "second": ::
+        <p>second</p>
+        :: break; ::
+    :: case "third": ::
+        <p>third</p>
+        :: break; ::
+    :: default: ::
+        <p>default</p>
+:: } ::
