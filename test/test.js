@@ -1,9 +1,11 @@
-var engine = require('../lib/engine.js');
+var mario = require('../mario.js');
 var fs = require('fs');
 
-console.log(engine.compile(fs.readFileSync('./template.html', {
+var template = fs.readFileSync('./test/template.html', {
     encoding: 'utf-8'
-}), {
+});
+
+var data = {
     exampleArray: [ 'first', 'second', 'third' ],
     option: {
         x: {
@@ -12,4 +14,9 @@ console.log(engine.compile(fs.readFileSync('./template.html', {
         }
     },
     show: true
-}));
+};
+
+var compiled = mario.compile(template, data);
+
+// Print results
+console.log(compiled);
