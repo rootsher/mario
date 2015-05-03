@@ -1,6 +1,6 @@
-var engine = {};
+var Mario = {};
 
-engine.compile = function (templateContent, parameters) {
+Mario.compile = function (templateContent, data) {
     var match;
     var expression = /::(.+?)::/g;
     var cursor = 0;
@@ -11,4 +11,4 @@ engine.compile = function (templateContent, parameters) {
     }
 };
 
-module.exports = engine;
+module.exports = Mario;

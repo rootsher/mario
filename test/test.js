@@ -1,4 +1,4 @@
-var engine = require('../lib/engine.js');
+var engine = require('../mario.js');
 var fs = require('fs');
 
 console.log(engine.compile(fs.readFileSync('./template.html', {
