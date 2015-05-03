@@ -1,0 +1,26 @@
+{
+  "name": "mario",
+  "version": "1.0.1",
+  "description": "Simple template engine in JavaScript",
+  "main": "mario.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootsher/mario.git"
+  },
+  "keywords": [
+    "template",
+    "engine"
+  ],
+  "author": "@rootsher @piecioshka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rootsher/mario/issues"
+  },
+  "homepage": "https://github.com/rootsher/mario"
+}

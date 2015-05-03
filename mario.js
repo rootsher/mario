@@ -87,7 +87,7 @@
     if ((typeof root.define === 'function') && root.define.amd) {
         root.define('Mario', [], Mario);
     } else if ((typeof root.module === 'object') && module.exports) {
-        root.module.exports = Mario;
+        root.module.exports.Mario = Mario;
     } else {
         root.Mario = Mario;
     }
