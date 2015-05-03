@@ -1,4 +1,4 @@
-# mario.js
+# mario
 
 Simple template engine in JavaScript.
 
@@ -17,7 +17,7 @@ and in JavaScript:
 
 ```js
 var $template = document.querySelector('.person-template').innerHTML;
-var compiled = Mario.compile($template, {
+var compiled = mario.compile($template, {
     person: {
         name: "John",
         surname: "Dahlback"
@@ -32,6 +32,14 @@ as results we have:
   <h1>John</h1>
   <h2>Dahlback</h2>
 </div>
+```
+
+# Tests
+
+How to run?
+
+```
+$ npm test
 ```
 
 # Authors

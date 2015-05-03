@@ -1,6 +1,6 @@
-var Mario = {};
+var mario = {};
 
-Mario.compile = function (templateContent, data) {
+mario.compile = function (templateContent, data) {
     var match;
     var expression = /::(.+?)::/g;
     var cursor = 0;
@@ -11,4 +11,4 @@ Mario.compile = function (templateContent, data) {
     }
 };
 
-module.exports = Mario;
+module.exports = mario;
